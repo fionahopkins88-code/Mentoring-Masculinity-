@@ -56,7 +56,10 @@ body {
   background-color: var(--black);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  overflow-x: hidden;
+}
+
+html, body {
+  overflow-x: clip;
 }
 
 body.menu-open {
@@ -1020,7 +1023,7 @@ h3 {
   position: fixed;
   bottom: 1.25rem;
   right: 1.25rem;
-  z-index: 90;
+  z-index: 9999;
   display: flex;
   align-items: center;
   gap: 0.5rem;
