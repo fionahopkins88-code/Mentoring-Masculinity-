@@ -3,164 +3,419 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mentoring Masculinity — Helping Young Men Find Their Footing</title>
-  <meta name="description" content="1-to-1 mentoring for young men aged 10–18. Helping parents reconnect with their sons through guided, intentional mentoring.">
+  <title>MM | Mentoring Masculinity — Build Strong, Confident Young Men</title>
+  <meta name="description" content="MM helps boys and young men develop confidence, discipline, resilience, and purpose through structured mentorship with Cal.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,400;1,9..144,600&display=swap" rel="stylesheet">
-  <link href="https://api.fontshare.com/v2/css?f[]=cabinet-grotesk@400,500,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-  <!-- Section 1: Hero -->
-  <section class="hero" aria-label="Introduction">
+  <!-- NAV -->
+  <nav class="site-nav" aria-label="Main navigation">
+    <div class="container nav-inner">
+      <a href="#" class="nav-logo">MM</a>
+      <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#cohort">Founding Cohort</a>
+        <a href="#parents">Parents</a>
+        <a href="#apply" class="btn btn--sm">Apply Now</a>
+      </div>
+      <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+    <a href="#about">About Cal</a>
+    <a href="#cohort">Founding Cohort</a>
+    <a href="#parents">Parents</a>
+    <a href="#faq">FAQ</a>
+    <a href="#apply" class="btn btn--bronze">Apply Now</a>
+  </div>
+
+
+  <!-- ========================================
+       SECTION 1: HERO
+       ======================================== -->
+  <section class="hero">
     <div class="container">
-      <h1>He's not broken.<br>He just needs someone in his corner.</h1>
-      <p class="subline">1-to-1 mentoring that helps young men aged 10–18 build confidence, direction, and self-respect — with a guide who gets it.</p>
-      <a href="#book" class="btn">Book a Free Discovery Call</a>
-      <p class="trust-line">A 20-minute conversation. No pressure. Just clarity.</p>
+      <div class="hero-content">
+        <p class="hero-tag">Mentoring &middot; Coaching &middot; Leadership</p>
+        <h1>Build Strong, Confident Young&nbsp;Men With&nbsp;Direction</h1>
+        <p class="hero-sub">MM helps boys and young men develop confidence, discipline, resilience, and purpose through structured mentorship with&nbsp;Cal.</p>
+        <div class="hero-ctas">
+          <a href="#apply" class="btn btn--bronze">Apply for Founding Cohort</a>
+          <a href="#parents" class="btn btn--outline">Book Parent Consultation</a>
+        </div>
+      </div>
+      <div class="hero-image">
+        <div class="image-placeholder" aria-label="Cal mentoring a young man in a performance environment">
+          <span>Hero image — mentor coaching young man</span>
+        </div>
+      </div>
     </div>
   </section>
 
-  <!-- Section 2: The Tension -->
-  <section class="tension" aria-label="Understanding the challenge">
-    <div class="container">
-      <p class="tension-open">You've noticed something shifting.</p>
-      <p>He's pulling away. The conversations are shorter. He's spending more time alone, or with friends you're not sure about. School calls it "a phase." You're not so sure.</p>
-      <p>You're not looking for therapy. You're not looking for a boot camp. You're looking for someone who can reach him — and help him find his footing.</p>
-    </div>
-  </section>
 
-  <!-- Section 3: How It Works -->
-  <section class="how-it-works" aria-label="How mentoring works">
-    <div class="container">
-      <h2>Here's how it works</h2>
-      <ol class="steps">
-        <li>
-          <span class="step-number">1</span>
-          <div class="step-content">
-            <strong>We talk.</strong>
-            <p>Book a free 20-minute discovery call. You tell me what's going on. I listen. We figure out if this is the right fit.</p>
-          </div>
-        </li>
-        <li>
-          <span class="step-number">2</span>
-          <div class="step-content">
-            <strong>I build a plan for him.</strong>
-            <p>Every young man is different. I design a mentoring approach based on who he is, not a one-size-fits-all programme.</p>
-          </div>
-        </li>
-        <li>
-          <span class="step-number">3</span>
-          <div class="step-content">
-            <strong>He starts showing up differently.</strong>
-            <p>Through regular 1-to-1 sessions, he builds confidence, accountability, and the skills to navigate what's ahead.</p>
-          </div>
-        </li>
-      </ol>
-      <a href="#book" class="inline-link">It starts with a conversation &rarr;</a>
-    </div>
-  </section>
-
-  <!-- Section 4: About -->
-  <section class="about" aria-label="About the mentor">
+  <!-- ========================================
+       SECTION 2: ABOUT CAL
+       ======================================== -->
+  <section class="about" id="about">
     <div class="container">
       <div class="about-layout">
         <div class="about-photo">
-          <div class="photo-placeholder" aria-label="Photo of mentor">
-            <span>Your photo here</span>
+          <div class="image-placeholder image-placeholder--portrait" aria-label="Photo of Cal">
+            <span>Cal's photo</span>
           </div>
         </div>
         <div class="about-text">
-          <p>I'm <strong>[Your Name]</strong>, and I started Mentoring Masculinity because I know what it's like to grow up without a steady hand guiding you.</p>
-          <p>I've spent years working with young men who are stuck — not because something's wrong with them, but because no one's shown them what's possible. I'm not a therapist. I'm not a teacher. I'm the person in his corner who says: <em>I see you, and I believe in who you're becoming.</em></p>
-          <p class="credential">[Your specific credential or experience — e.g. "I've mentored over 60 young men across the UK."]</p>
-          <a href="#book" class="inline-link">Want to see if we're the right fit? Let's talk &rarr;</a>
+          <p class="section-tag">Meet Your Mentor</p>
+          <h2>Cal</h2>
+          <p class="about-lead">Mentor. Coach. Role model. A trusted masculine guide who leads with strength and&nbsp;empathy.</p>
+          <p>Cal founded MM because too many young men are growing up without structure, accountability, or a strong male presence to learn from. He's not a therapist and he's not a teacher — he's the person who shows up consistently, sets the standard, and walks alongside your son as he becomes the man he's capable of&nbsp;being.</p>
+          <div class="about-pillars">
+            <span>Discipline</span>
+            <span>Accountability</span>
+            <span>Confidence</span>
+            <span>Mindset</span>
+            <span>Leadership</span>
+            <span>Resilience</span>
+          </div>
+          <a href="#apply" class="btn btn--bronze">Work With Cal</a>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Section 5: Who It's For -->
-  <section class="who-its-for" aria-label="Who this is for">
+
+  <!-- ========================================
+       SECTION 3: WHO THIS IS FOR
+       ======================================== -->
+  <section class="who-for" id="who">
     <div class="container">
-      <h2>This might be right for your son if&hellip;</h2>
-      <ul class="qualifier-list">
-        <li>He's lost motivation at school and you can't figure out why</li>
-        <li>He's angry or withdrawn and won't talk to you about it</li>
-        <li>He's been through a family change — divorce, a move, loss — and is struggling to adjust</li>
-        <li>He's a good kid, but he's drifting and you want someone to help him find direction</li>
-        <li>He doesn't have a consistent male role model in his life</li>
-      </ul>
-      <p class="qualifier-close">If you're reading this list and nodding — that's enough. You don't need a diagnosis. You just need a starting point.</p>
+      <p class="section-tag">Who This Is For</p>
+      <h2>Built for the young men who need it&nbsp;most</h2>
+      <div class="card-grid">
+        <div class="card">
+          <h3>Lacking Confidence</h3>
+          <p>Teenage boys who second-guess themselves, avoid challenges, or shrink in social situations. MM builds unshakeable self-belief through real action.</p>
+        </div>
+        <div class="card">
+          <h3>Needing Direction</h3>
+          <p>Young men drifting without goals or purpose. No ambition, no plan, no fire. MM provides structure and a clear path forward.</p>
+        </div>
+        <div class="card">
+          <h3>Struggling With Discipline</h3>
+          <p>Boys who can't stick to routines, follow through on commitments, or hold themselves accountable. MM instils the habits that change everything.</p>
+        </div>
+        <div class="card">
+          <h3>Missing Masculine Guidance</h3>
+          <p>Young men who don't have a consistent, strong male role model. Cal fills that gap — not as a replacement, but as a trusted guide.</p>
+        </div>
+        <div class="card">
+          <h3>Young Athletes</h3>
+          <p>Boys with physical talent but mental blocks — performance anxiety, lack of focus, poor discipline. MM sharpens the mental game alongside the physical.</p>
+        </div>
+        <div class="card">
+          <h3>Navigating Identity</h3>
+          <p>Young men working out who they are, what they stand for, and what kind of man they want to become. MM gives them the space and structure to figure it out.</p>
+        </div>
+      </div>
     </div>
   </section>
 
-  <!-- Section 6: Testimonials -->
-  <section class="testimonials" aria-label="What parents say">
+
+  <!-- ========================================
+       SECTION 4: WHAT MM HELPS WITH
+       ======================================== -->
+  <section class="benefits">
     <div class="container">
-      <blockquote>
-        <p>&ldquo;I didn't know what to expect, but within a month my son was talking to me again. Actually talking.&rdquo;</p>
-        <cite>— Sarah, mum of a 14-year-old</cite>
-      </blockquote>
-      <blockquote>
-        <p>&ldquo;He got through to him in ways I couldn't. It wasn't magic — it was patience and consistency.&rdquo;</p>
-        <cite>— David, dad of a 12-year-old</cite>
-      </blockquote>
-      <blockquote>
-        <p>&ldquo;My son went from dreading school to setting his own goals. I still can't quite believe it.&rdquo;</p>
-        <cite>— Emma, mum of an 11-year-old</cite>
-      </blockquote>
-      <a href="#book" class="btn">Book Your Free Discovery Call</a>
+      <p class="section-tag">What MM Builds</p>
+      <h2>The qualities that define strong young&nbsp;men</h2>
+      <div class="benefit-grid">
+        <div class="benefit">
+          <span class="benefit-icon">01</span>
+          <strong>Confidence</strong>
+        </div>
+        <div class="benefit">
+          <span class="benefit-icon">02</span>
+          <strong>Discipline</strong>
+        </div>
+        <div class="benefit">
+          <span class="benefit-icon">03</span>
+          <strong>Routine &amp; Structure</strong>
+        </div>
+        <div class="benefit">
+          <span class="benefit-icon">04</span>
+          <strong>Emotional Resilience</strong>
+        </div>
+        <div class="benefit">
+          <span class="benefit-icon">05</span>
+          <strong>Masculine Leadership</strong>
+        </div>
+        <div class="benefit">
+          <span class="benefit-icon">06</span>
+          <strong>Accountability</strong>
+        </div>
+        <div class="benefit">
+          <span class="benefit-icon">07</span>
+          <strong>Communication Skills</strong>
+        </div>
+        <div class="benefit">
+          <span class="benefit-icon">08</span>
+          <strong>Physical &amp; Mental Performance</strong>
+        </div>
+        <div class="benefit">
+          <span class="benefit-icon">09</span>
+          <strong>Self-Respect</strong>
+        </div>
+        <div class="benefit">
+          <span class="benefit-icon">10</span>
+          <strong>Future Direction</strong>
+        </div>
+      </div>
     </div>
   </section>
 
-  <!-- Section 7: FAQ -->
-  <section class="faq" aria-label="Frequently asked questions">
+
+  <!-- ========================================
+       SECTION 5: FOUNDING COHORT
+       ======================================== -->
+  <section class="cohort" id="cohort">
     <div class="container">
-      <h2>Questions you might have</h2>
+      <div class="cohort-layout">
+        <div class="cohort-text">
+          <p class="section-tag">Limited Availability</p>
+          <h2>Founding Cohort — Now&nbsp;Open</h2>
+          <p class="cohort-lead">The first-ever MM cohort. Limited places. Introductory pricing that won't be offered&nbsp;again.</p>
+          <p>This is your chance to secure close, personal mentorship with Cal at the founding member rate. Future cohorts will be priced higher and have less direct access. Founding members get&nbsp;priority.</p>
+        </div>
+        <div class="cohort-offer">
+          <div class="offer-card">
+            <p class="offer-label">Founding Member</p>
+            <h3>What's Included</h3>
+            <ul class="offer-list">
+              <li>Structured weekly mentoring sessions</li>
+              <li>Direct WhatsApp access to Cal</li>
+              <li>Personal accountability system</li>
+              <li>Close mentorship — small group, high attention</li>
+              <li>Founding member pricing locked in</li>
+              <li>First access to future MM programmes</li>
+              <li>Regular progress check-ins with parents</li>
+            </ul>
+            <div class="offer-note">
+              <p><strong>Limited places.</strong> Founding cohort pricing will increase for all future&nbsp;cohorts.</p>
+            </div>
+            <a href="#apply" class="btn btn--bronze btn--full">Apply for Founding Cohort</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ========================================
+       SECTION 6: HOW IT WORKS
+       ======================================== -->
+  <section class="process" id="process">
+    <div class="container">
+      <p class="section-tag">The Process</p>
+      <h2>How it works</h2>
+      <ol class="process-steps">
+        <li>
+          <span class="process-num">01</span>
+          <div>
+            <strong>Parent or Individual Consultation</strong>
+            <p>A conversation with Cal to understand your son, your concerns, and what you're looking for. Parents are always welcome to meet Cal first — in person or&nbsp;online.</p>
+          </div>
+        </li>
+        <li>
+          <span class="process-num">02</span>
+          <div>
+            <strong>In-Person Introductory Meeting</strong>
+            <p>Cal meets your son face-to-face. No pressure — just a real conversation to build rapport and see if it's the right&nbsp;fit.</p>
+          </div>
+        </li>
+        <li>
+          <span class="process-num">03</span>
+          <div>
+            <strong>Join the Founding Cohort</strong>
+            <p>Once confirmed, your son joins the founding cohort and receives his personalised mentoring&nbsp;plan.</p>
+          </div>
+        </li>
+        <li>
+          <span class="process-num">04</span>
+          <div>
+            <strong>Weekly Mentorship Sessions</strong>
+            <p>Structured, consistent sessions — the backbone of real change. Discipline is built through showing up, every&nbsp;week.</p>
+          </div>
+        </li>
+        <li>
+          <span class="process-num">05</span>
+          <div>
+            <strong>WhatsApp Support &amp; Accountability</strong>
+            <p>Between sessions, Cal is accessible. Check-ins, encouragement, and accountability — not just during sessions, but through the&nbsp;week.</p>
+          </div>
+        </li>
+        <li>
+          <span class="process-num">06</span>
+          <div>
+            <strong>Progress Check-Ins</strong>
+            <p>Regular updates shared with parents. You'll see the growth — in his habits, his mindset, and his&nbsp;confidence.</p>
+          </div>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+
+  <!-- ========================================
+       SECTION 7: PARENTS
+       ======================================== -->
+  <section class="parents" id="parents">
+    <div class="container">
+      <div class="parents-layout">
+        <div class="parents-text">
+          <p class="section-tag">For Parents</p>
+          <h2>Support For Parents Who Want More For Their&nbsp;Sons</h2>
+          <p>You know your son has potential. You've tried talking, tried pushing, tried stepping back — and nothing seems to land. MM exists for exactly this&nbsp;moment.</p>
+          <p>Cal works with parents directly. Before your son starts, you'll have the chance to meet Cal in person, ask every question, and understand exactly how the mentorship works. This isn't a black box — it's a&nbsp;partnership.</p>
+        </div>
+        <div class="parents-features">
+          <div class="parent-feature">
+            <strong>In-Person Parent Meeting</strong>
+            <p>Meet Cal face-to-face before making any commitment. See who your son will be working with.</p>
+          </div>
+          <div class="parent-feature">
+            <strong>Consultation Before Enrolment</strong>
+            <p>Every family starts with a conversation. No signup forms — a real discussion about your son's needs.</p>
+          </div>
+          <div class="parent-feature">
+            <strong>Ongoing Progress Communication</strong>
+            <p>You'll receive regular updates on your son's development, mindset shifts, and areas of growth.</p>
+          </div>
+          <div class="parent-feature">
+            <strong>Safe, Trusted Mentorship</strong>
+            <p>Your son's wellbeing comes first. Cal provides a structured, safe environment built on respect and accountability.</p>
+          </div>
+          <div class="parent-feature">
+            <strong>Real Structure &amp; Accountability</strong>
+            <p>This isn't motivational talk. It's consistent, structured mentorship with clear expectations and measurable progress.</p>
+          </div>
+        </div>
+        <a href="#apply" class="btn btn--bronze">Book Parent Consultation</a>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ========================================
+       SECTION 8: FAQ
+       ======================================== -->
+  <section class="faq" id="faq">
+    <div class="container">
+      <p class="section-tag">FAQ</p>
+      <h2>Common questions</h2>
       <div class="faq-list">
         <details>
-          <summary>What happens on a discovery call?</summary>
-          <p>We talk for 20 minutes. You tell me what's going on, I ask a few questions, and we figure out together whether mentoring is the right next step. There's no sales pitch.</p>
+          <summary>What age range is this for?</summary>
+          <p>MM works with boys and young men aged 10 to 18. The mentoring approach adapts to each individual's maturity and stage of development.</p>
         </details>
         <details>
-          <summary>How old does my son need to be?</summary>
-          <p>I work with young men aged 10 to 18. The approach adapts to their stage — a 10-year-old and a 17-year-old need very different things, and I adjust accordingly.</p>
+          <summary>Is this one-to-one or group?</summary>
+          <p>The founding cohort is a small, close group with significant individual attention from Cal. Each young man also receives personalised guidance based on his specific needs and goals.</p>
         </details>
         <details>
-          <summary>What if my son doesn't want to do it?</summary>
-          <p>That's normal — and it's fine. I'm used to meeting resistance with patience. Most boys come around once they realise I'm not another adult telling them what to do.</p>
+          <summary>How often are sessions?</summary>
+          <p>Sessions run weekly. Consistency is the foundation of everything we build — showing up every week is non-negotiable.</p>
+        </details>
+        <details>
+          <summary>Can parents speak to Cal first?</summary>
+          <p>Absolutely — and it's encouraged. Every enrolment starts with a parent consultation, either in person or online. You'll meet Cal before your son does.</p>
+        </details>
+        <details>
+          <summary>Is there WhatsApp support?</summary>
+          <p>Yes. Founding cohort members have direct WhatsApp access to Cal for check-ins, accountability, and support between sessions.</p>
+        </details>
+        <details>
+          <summary>What's included in the founding cohort?</summary>
+          <p>Weekly structured sessions, direct WhatsApp access, personal accountability system, progress check-ins with parents, and founding member pricing locked in permanently.</p>
         </details>
         <details>
           <summary>How much does it cost?</summary>
-          <p>We'll cover that on the discovery call once I understand what your son needs. Every plan is individual.</p>
+          <p>Founding cohort pricing is introductory and will increase for future cohorts. Exact pricing is shared during the parent consultation so Cal can explain the full value of what's included.</p>
         </details>
         <details>
-          <summary>Is this therapy?</summary>
-          <p>No. I'm a mentor, not a therapist. If I think your son needs clinical support, I'll tell you honestly and help you find the right person.</p>
+          <summary>Where are sessions held?</summary>
+          <p>Sessions are held in person. Specific location details are shared during the consultation process.</p>
         </details>
       </div>
     </div>
   </section>
 
-  <!-- Section 8: Final CTA -->
-  <section class="final-cta" id="book" aria-label="Book a call">
+
+  <!-- ========================================
+       SECTION 9: FINAL CTA
+       ======================================== -->
+  <section class="final-cta" id="apply">
     <div class="container">
-      <p class="closing-line">You don't need to have all the answers.<br>You just need to make one call.</p>
-      <a href="https://calendly.com/YOUR-LINK" class="btn">Book a Free Discovery Call</a>
-      <p class="reassurance">20 minutes. No obligation. Just a conversation about your son.</p>
+      <h2>Give Him The Confidence, Discipline, and Direction To Become The Man He's Meant To&nbsp;Be</h2>
+      <p class="final-cta-sub">The founding cohort is open. Places are limited. Don't let this moment&nbsp;pass.</p>
+      <div class="hero-ctas">
+        <a href="https://calendly.com/YOUR-LINK" class="btn btn--bronze">Apply Now</a>
+        <a href="https://calendly.com/YOUR-LINK" class="btn btn--outline">Book Intro Call</a>
+      </div>
     </div>
   </section>
 
-  <!-- Section 9: Footer -->
-  <footer class="site-footer" aria-label="Contact and legal">
-    <div class="container">
-      <a href="mailto:hello@mentoringmasculinity.com" class="footer-email">hello@mentoringmasculinity.com</a>
-      <p class="footer-copy">&copy; 2026 Mentoring Masculinity</p>
+
+  <!-- ========================================
+       FOOTER
+       ======================================== -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <span class="footer-logo">MM</span>
+        <span class="footer-name">Mentoring Masculinity</span>
+      </div>
+      <div class="footer-links">
+        <a href="mailto:hello@mentoringmasculinity.com">Contact</a>
+        <a href="https://instagram.com/mentoringmasculinity" target="_blank" rel="noopener">Instagram</a>
+        <a href="https://wa.me/YOUR-NUMBER" target="_blank" rel="noopener">WhatsApp</a>
+      </div>
+      <a href="#apply" class="btn btn--sm btn--bronze">Apply Now</a>
+      <p class="footer-copy">&copy; 2026 Mentoring Masculinity. All rights reserved.</p>
     </div>
   </footer>
+
+
+  <!-- MOBILE NAV SCRIPT -->
+  <script>
+    const toggle = document.querySelector('.nav-toggle');
+    const menu = document.getElementById('mobileMenu');
+    const links = menu.querySelectorAll('a');
+
+    toggle.addEventListener('click', () => {
+      const open = toggle.getAttribute('aria-expanded') === 'true';
+      toggle.setAttribute('aria-expanded', !open);
+      menu.setAttribute('aria-hidden', open);
+      menu.classList.toggle('is-open');
+      document.body.classList.toggle('menu-open');
+    });
+
+    links.forEach(link => {
+      link.addEventListener('click', () => {
+        toggle.setAttribute('aria-expanded', 'false');
+        menu.setAttribute('aria-hidden', 'true');
+        menu.classList.remove('is-open');
+        document.body.classList.remove('menu-open');
+      });
+    });
+  </script>
 
 </body>
 </html>
