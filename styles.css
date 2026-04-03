@@ -1011,3 +1011,43 @@ h3 {
 .skip-link:focus {
   top: 0;
 }
+
+
+/* =========================================
+   WHATSAPP FLOATING BUTTON
+   ========================================= */
+.whatsapp-float {
+  position: fixed;
+  bottom: 1.5rem;
+  right: 1.5rem;
+  z-index: 90;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background-color: #25D366;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.4);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.whatsapp-float:hover {
+  transform: scale(1.08);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5);
+}
+
+.whatsapp-float:focus-visible {
+  outline: 2px solid var(--bronze);
+  outline-offset: 3px;
+}
+
+@media (min-width: 48rem) {
+  .whatsapp-float {
+    bottom: 2rem;
+    right: 2rem;
+    width: 60px;
+    height: 60px;
+  }
+}
