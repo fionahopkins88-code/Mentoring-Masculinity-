@@ -1,0 +1,352 @@
+/* =========================================
+   MM | Shared Print Stylesheet
+   A4 pages, WhatsApp-ready PDFs
+   ========================================= */
+
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=DM+Sans:wght@400;500;600;700&display=swap');
+
+:root {
+  --black: #0A0A0A;
+  --charcoal: #1A1A1A;
+  --dark-grey: #2A2A2A;
+  --mid-grey: #6B6B6B;
+  --bronze: #B8935A;
+  --bronze-light: rgba(184, 147, 90, 0.1);
+  --white: #ffffff;
+  --off-white: #F5F5F3;
+  --font-heading: 'Fraunces', Georgia, serif;
+  --font-body: 'DM Sans', Helvetica, Arial, sans-serif;
+}
+
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 100%;
+}
+
+body {
+  font-family: var(--font-body);
+  font-size: 10.5pt;
+  line-height: 1.55;
+  color: var(--black);
+  background: var(--white);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* --- Page setup --- */
+.page {
+  width: 210mm;
+  min-height: 297mm;
+  margin: 0 auto;
+  padding: 20mm 22mm;
+  background: var(--white);
+  position: relative;
+}
+
+/* --- Header bar --- */
+.page-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 14pt;
+  border-bottom: 2px solid var(--black);
+  margin-bottom: 24pt;
+}
+
+.page-header .logo {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 22pt;
+  color: var(--black);
+  letter-spacing: -0.03em;
+}
+
+.page-header .brand-name {
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: 8pt;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--mid-grey);
+}
+
+/* --- Typography --- */
+h1 {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 24pt;
+  line-height: 1.15;
+  color: var(--black);
+  margin-bottom: 8pt;
+  letter-spacing: -0.02em;
+}
+
+h2 {
+  font-family: var(--font-heading);
+  font-weight: 600;
+  font-size: 15pt;
+  line-height: 1.2;
+  color: var(--black);
+  margin-bottom: 8pt;
+  margin-top: 20pt;
+  letter-spacing: -0.01em;
+}
+
+h3 {
+  font-family: var(--font-body);
+  font-weight: 700;
+  font-size: 10.5pt;
+  color: var(--black);
+  margin-bottom: 3pt;
+}
+
+p {
+  margin-bottom: 8pt;
+}
+
+.subtitle {
+  font-size: 12pt;
+  color: var(--mid-grey);
+  margin-bottom: 20pt;
+  line-height: 1.45;
+}
+
+.tag {
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: 7.5pt;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--bronze);
+  margin-bottom: 6pt;
+  display: block;
+}
+
+/* --- Two-column layout --- */
+.two-col {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20pt;
+  margin-top: 16pt;
+}
+
+/* --- Cards --- */
+.card {
+  background: var(--off-white);
+  border-radius: 4pt;
+  padding: 14pt 16pt;
+  margin-bottom: 10pt;
+}
+
+.card h3 {
+  margin-bottom: 4pt;
+}
+
+.card p {
+  font-size: 9.5pt;
+  color: var(--dark-grey);
+  margin-bottom: 0;
+}
+
+/* --- Accent card --- */
+.card--accent {
+  background: var(--black);
+  color: var(--white);
+  border-radius: 4pt;
+  padding: 18pt 20pt;
+}
+
+.card--accent h3 {
+  color: var(--bronze);
+  font-family: var(--font-heading);
+  font-weight: 600;
+  font-size: 13pt;
+  margin-bottom: 6pt;
+}
+
+.card--accent p {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 9.5pt;
+}
+
+/* --- Lists --- */
+.check-list {
+  list-style: none;
+  margin-bottom: 12pt;
+}
+
+.check-list li {
+  padding: 5pt 0;
+  padding-left: 18pt;
+  position: relative;
+  font-size: 10pt;
+  border-bottom: 1px solid #eee;
+}
+
+.check-list li:last-child {
+  border-bottom: none;
+}
+
+.check-list li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 9pt;
+  width: 6pt;
+  height: 6pt;
+  border-radius: 50%;
+  background: var(--bronze);
+}
+
+/* --- Steps --- */
+.step {
+  display: flex;
+  gap: 12pt;
+  margin-bottom: 12pt;
+}
+
+.step-num {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 18pt;
+  color: var(--bronze);
+  flex-shrink: 0;
+  width: 24pt;
+  line-height: 1.2;
+}
+
+.step-text strong {
+  display: block;
+  margin-bottom: 2pt;
+}
+
+.step-text p {
+  font-size: 9.5pt;
+  color: var(--dark-grey);
+  margin-bottom: 0;
+}
+
+/* --- FAQ --- */
+.faq-item {
+  padding: 10pt 0;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.faq-item:last-child {
+  border-bottom: none;
+}
+
+.faq-q {
+  font-weight: 700;
+  font-size: 10.5pt;
+  color: var(--black);
+  margin-bottom: 3pt;
+}
+
+.faq-a {
+  font-size: 9.5pt;
+  color: var(--dark-grey);
+  margin-bottom: 0;
+}
+
+/* --- CTA block --- */
+.cta-block {
+  background: var(--black);
+  color: var(--white);
+  border-radius: 4pt;
+  padding: 18pt 20pt;
+  margin-top: 20pt;
+  text-align: center;
+}
+
+.cta-block h2 {
+  color: var(--white);
+  font-size: 14pt;
+  margin-top: 0;
+  margin-bottom: 6pt;
+}
+
+.cta-block p {
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 10pt;
+  margin-bottom: 0;
+}
+
+.cta-block .contact {
+  margin-top: 10pt;
+  font-weight: 600;
+  color: var(--bronze);
+  font-size: 10.5pt;
+}
+
+/* --- Footer --- */
+.page-footer {
+  position: absolute;
+  bottom: 20mm;
+  left: 22mm;
+  right: 22mm;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 10pt;
+  border-top: 1px solid #e5e5e5;
+  font-size: 7.5pt;
+  color: var(--mid-grey);
+}
+
+/* --- Divider --- */
+.divider {
+  border: none;
+  border-top: 1px solid #e5e5e5;
+  margin: 16pt 0;
+}
+
+/* --- Highlight text --- */
+.highlight {
+  color: var(--bronze);
+  font-weight: 600;
+}
+
+/* --- Print styles --- */
+@media print {
+  body {
+    background: white;
+  }
+
+  .page {
+    width: auto;
+    min-height: auto;
+    margin: 0;
+    padding: 15mm 18mm;
+    page-break-after: always;
+  }
+
+  .page-footer {
+    position: fixed;
+    bottom: 10mm;
+    left: 18mm;
+    right: 18mm;
+  }
+
+  @page {
+    size: A4;
+    margin: 0;
+  }
+}
+
+/* --- Screen preview --- */
+@media screen {
+  body {
+    background: #e0e0e0;
+    padding: 20px 0;
+  }
+
+  .page {
+    box-shadow: 0 2px 20px rgba(0,0,0,0.15);
+    margin-bottom: 20px;
+  }
+}
